@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-
+import Mint from './Mint';
 
 function App() {
   return (
@@ -21,6 +21,7 @@ function App() {
         </nav>
 
         <Routes>
+          <Route path="/mint" element={<Mint />} />
           <Route path="/" element={<Home />} />
         </Routes>
       </div>
