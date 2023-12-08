@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './Verify.css';
 
 function Verify() {
   const [inputAge, setInputAge] = useState('');
