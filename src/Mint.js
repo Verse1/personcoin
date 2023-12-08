@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './Mint.css';
 
 function Mint() {
   const [age, setAge] = useState('');
@@ -10,13 +11,13 @@ function Mint() {
   };
 
   return (
-    <div className="mint-container">
+    <div className="mint">
       <h2>Mint PersonCoin</h2>
-      <form onSubmit={handleSubmit}>
+      <form className='form' onSubmit={handleSubmit}>
         <label>
           Enter your age:
           <input
-            type="number"
+            type="text"
             value={age}
             onChange={(e) => setAge(e.target.value)}
             required
