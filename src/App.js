@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Mint from './Mint';
+import Verify from './Verify';
 import './App.css';
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
 
         <Routes>
           <Route path="/mint" element={<Mint />} />
+          <Route path="/verify" element={<Verify />} />
           <Route path="/" element={<Home />} />
         </Routes>
       </div>
